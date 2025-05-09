@@ -90,6 +90,12 @@ header {
   cursor: pointer;
 }
 
+.nav-links.active {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
 /* ========== MAIN CONTENT ========== */
 .herosec {
   position: relative;
@@ -128,7 +134,7 @@ header {
   transform: translateY(-50%);
 }
 
-.slider-controls button {
+slider-controls button {
   background-color: rgba(0, 0, 0, 0.5);
   color: white;
   border: none;
@@ -208,4 +214,74 @@ footer {
   text-align: center;
   bottom: 0;
   width: 100%;
+}
+
+@media (max-width: 768px) {
+  .contact-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .herosec {
+    height: auto;
+  }
+
+  .slider-controls button {
+    font-size: 1rem;
+    padding: 0.5rem;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    gap: 1rem;
+    background-color: #3d2c2c;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    padding: 1rem;
+  }
+
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .navbar ul {
+    flex-direction: column;
+    gap: 1rem;
+    width: 100%;
+    background-color: #3d2c2c;
+    padding: 1rem;
+  }
+
+  .herosec {
+    padding-top: 120px;
+  }
+}
+
+@media (max-width: 480px) {
+  .contact-info h1 {
+    font-size: 2rem;
+  }
+
+  .contact-box h2 {
+    font-size: 1.2rem;
+  }
+
+  .contact-box p {
+    font-size: 0.9rem;
+  }
+
+  .navbar ul {
+    gap: 0.5rem;
+  }
+
+  .herosec {
+    padding-top: 140px;
+  }
 }

@@ -1,9 +1,9 @@
 // Mobile Navigation Toggle
-const toggleBtn = document.querySelector('.menu-toggle');
-const navMenu = document.querySelector('.navbar ul');
+const menuToggle = document.getElementById('menu-toggle');
+const navLinks = document.querySelector('.nav-links');
 
-toggleBtn.addEventListener('click', () => {
-  navMenu.classList.toggle('show');
+menuToggle.addEventListener('click', () => {
+  navLinks.classList.toggle('active');
 });
 
 // Optional smooth scroll for gallery button (if button exists)
