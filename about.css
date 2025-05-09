@@ -1,0 +1,147 @@
+/* ========== GLOBAL STYLES ========== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Times New Roman', Times, serif;
+  line-height: 1.6;
+  background-color: #fefefe;
+  color: #333;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* ========== HEADER & NAVBAR ========== */
+header {
+  background: #3d2c2c;
+  color: #fff;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+.logo {
+  display: flex;
+  flex: row;
+  font-size: 1.5rem;
+  font-weight: bold;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 1rem;
+}
+
+.logo img {
+  width: 50px;
+  height: 50px;
+  border-radius: 10px;
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+}
+
+.navbar a {
+  color: #fff;
+  font-weight: 500;
+  position: relative;
+  transition: color 0.3s ease;
+}
+
+.navbar a::after {
+  content: '';
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: #ffcc00;
+  transition: width 0.3s ease;
+}
+
+.navbar a:hover {
+  color: #ffcc00;
+}
+
+.navbar a:hover::after {
+  width: 100%;
+}
+
+.menu-toggle {
+  display: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+/* ========== HERO SECTION ========== */
+.hero {
+  padding-top: 100px;
+}
+
+.hero h1 {
+  font-size: 2.5rem;
+  background-color: #3d2c2c23;
+  padding: 20px;
+  padding-left: 100px;
+  padding-right: 100px;
+  border-radius: 20px;
+  width: 1000px;
+}
+
+.hero-slideshow {
+  display: none;
+}
+
+.variable-section {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin: 1rem;
+  padding: 20px;
+}
+
+.story-text h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.story-text {
+  background-color: #3d2c2c;
+  color: white;
+  margin: 1rem;
+  padding: 2rem;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-style: italic;
+  line-height: 2.5rem;
+}
+
+
+
+/* ========== FOOTER ========== */
+footer {
+  background-color: #3d2c2c;
+  color: white;
+  padding: 1rem;
+  text-align: center;
+  bottom: 0;
+  width: 100%;
+}
